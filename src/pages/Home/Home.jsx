@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { getTrendingMovies } from 'services/API';
 import { Loader } from 'components/Loader/Loader';
 import { MovieList } from 'components/MovieList/MovieList';
+import { Box } from 'pages/MovieDetail/MovieDetail.styled';
 
 export default function Home() {
   const [movies, setMovies] = useState([]);
@@ -23,9 +24,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <h1>Trending today</h1>
+    <Box>
+      {/* <Title>Trending today</Title> */}
       {isLoading ? <Loader /> : <MovieList movies={movies} link={'movies/'} />}
-    </div>
+    </Box>
   );
 }

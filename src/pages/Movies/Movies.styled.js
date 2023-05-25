@@ -30,7 +30,7 @@ export const Button = styled.button`
   width: 48px;
   height: 48px;
   border: 0;
-  background-color: #dc1818;
+  background-color: #2a8d9c;
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png');
   background-size: 40%;
   background-repeat: no-repeat;

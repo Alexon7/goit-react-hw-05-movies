@@ -9,7 +9,7 @@ export const Box = styled.header`
 
 export const Nav = styled.header`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 32px;
   padding: 16px;
   text-transform: uppercase;
@@ -22,12 +22,12 @@ export const NavItem = styled(NavLink)`
 
   &.active {
     color: #ffffff;
-    background: #dc1818;
+    background: #2a8d9c;
     border-radius: 5px;
   }
 
   :hover:not(.active),
   :focus-visible:not(.active) {
-    color: #dc1818;
+    color: #2a8d9c;
   }
 `;

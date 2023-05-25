@@ -12,7 +12,7 @@ export const ButtonGoBack = styled(Link)`
   padding: 6px 16px;
   border: none;
   border-radius: 5px;
-  background-color: #dc1818;
+  background-color: #2a8d9c;
   color: #000000;
   cursor: pointer;
   outline: none;
@@ -21,7 +21,7 @@ export const ButtonGoBack = styled(Link)`
 
   :hover,
   :focus {
-    background-color: #dc1818;
+    background-color: #2a8d9c;
     color: #ffffff;
   }
 `;
@@ -50,7 +50,7 @@ export const MovieTitle = styled.h1`
 export const Rating = styled.p`
   display: inline-block;
   margin-bottom: 16px;
-  background-color: #dc1818;
+  background-color: #2a8d9c;
   color: #ffffff;
   padding: 2px 6px;
   border-radius: 5px;
@@ -75,7 +75,7 @@ export const LinkItem = styled(Link)`
 
   :hover,
   :focus {
-    color: #dc1818;
+    color: #2a8d9c;
   }
 `;
 
@@ -83,5 +83,5 @@ export const Error = styled.p`
   padding: 32px 16px;
   font-size: 32px;
   text-align: center;
-  color: #dc1818;
+  color: #2a8d9c;
 `;
