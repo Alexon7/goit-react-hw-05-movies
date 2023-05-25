@@ -1,18 +1,16 @@
 import { Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
 import { Loader } from 'components/Loader/Loader';
-import { StyledLink, Container, Nav } from './Layout.styled';
+import { AppNav } from 'components/AppNav/AppNav';
+import { Box } from './Layout.styled';
+import { Outlet } from 'react-router-dom';
 
-export const Layout = () => {
+export default function Layout() {
   return (
-    <Container>
-      <Nav>
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="movies">Movies</StyledLink>
-      </Nav>
+    <Box>
+      <AppNav />
       <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
-    </Container>
+    </Box>
   );
-};
+}
